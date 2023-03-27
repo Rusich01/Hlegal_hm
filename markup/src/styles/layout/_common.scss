@@ -1,0 +1,33 @@
+[id="wrapper"] {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  transition: 0.8s;
+}
+
+.btn_serv {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24a3ff;
+
+  &:hover {
+    color: #f0145a;
+  }
+}

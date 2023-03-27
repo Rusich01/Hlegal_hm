@@ -1,0 +1,122 @@
+footer {
+  background: #f5f5fa;
+}
+.cont_footer::before {
+  content: "";
+  width: 100%;
+  display: block;
+  min-height: 2px;
+  background: #e6e6f0;
+}
+.footer_nav {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+
+  li > a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #24a3ff;
+
+    &:hover {
+      color: #f0145a;
+    }
+  }
+}
+.footer-menu_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media (min-width: 768px) {
+    padding-bottom: 30px;
+    flex-direction: row;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    @media (min-width: 768px) {
+      &:nth-child(2) {
+        &::before {
+          content: "";
+          display: inline-block;
+          background: #b3b3ba;
+          margin-right: 6px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+.footer_last_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .icon-facebook_footer::before {
+    font-family: "icomoon";
+    font-size: 23px;
+    color: #24a3ff;
+
+    &:hover {
+      color: #f0145a;
+    }
+  }
+  li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    &:nth-child(2) {
+      a {
+        color: #46466e;
+      }
+    }
+
+    @media (min-width: 768px) {
+      &:nth-child(2),
+      &:nth-child(3) {
+        &::before {
+          content: "";
+          display: inline-block;
+          background: #b3b3ba;
+          margin-right: 6px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+.dist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  @media (min-width: 768px) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #b3b3ba;
+  }
+}
+.footer {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+}
